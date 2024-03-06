@@ -33,3 +33,14 @@ body{
         opacity: 1;
     }
 }
+
+@media (min-width: 700px) {
+    .media-nav{
+        gap: 2.5rem;
+    }
+}
+@media (max-width: 700px) {
+    .media-nav{
+        gap: 0.5rem;
+    }
+}

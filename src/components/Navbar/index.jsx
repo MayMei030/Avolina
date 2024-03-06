@@ -5,7 +5,7 @@ const Navbar = ({titleScreenOn, moveToLore, moveToRaces, moveToElements, moveToF
     const activeStyle = ""
     return (
         <nav className="hide cont-font">
-            <ul className={`fixed flex p-0 justify-center items-center gap-10 m-0 text-[30px] top-[1%] right-[2%] ${titleScreenOn ? "hide-nav":"show-nav"}`}>
+            <ul className={`media-nav gap-2 fixed flex p-0 justify-center items-center m-0 text-[30px] top-[1%] right-[2%] ${titleScreenOn ? "hide-nav":"show-nav"}`}>
 
                 <li className="nav-li cursor-pointer" onClick={moveToLore}>
                         Prologue

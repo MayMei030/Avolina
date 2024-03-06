@@ -1,7 +1,7 @@
 {
   "homepage": "https://github.com/MayMei030/Avolina/",
   "name": "avolina-react-package",
-  "private": true,
+  "private": false,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
