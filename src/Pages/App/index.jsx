@@ -5,8 +5,8 @@ import Story from '../Story'
 
 
 const routes = createBrowserRouter([
-  { path: "/", element: <Home /> },
-  { path: "/story", element: <Story /> },
+  { path: "/Avolina/", element: <Home /> },
+  { path: "/Avolina/story", element: <Story /> },
 ])
 
 
