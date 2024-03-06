@@ -1,12 +1,13 @@
+import { forwardRef } from "react"
 import Orbit from "../Orbit"
 
-const ElementsSection = () => {
+const ElementsSection = ({},ref) => {
     return (
-        <div className="mt-10">
+        <div className="pt-10" ref={ref}>
             <p className="cont-font text-6xl text-center mb-4">Elements</p>
             <Orbit />
         </div>
     )
 }
 
-export default ElementsSection
+export default forwardRef(ElementsSection)

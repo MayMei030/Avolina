@@ -2,6 +2,7 @@ import shadowElvesimg from "../../assets/Images/shadowElve.jpg"
 import elvesimg from "../../assets/Images/Elves.jpg"
 
 import RaceElement from "../RaceElement"
+import { forwardRef } from "react"
 
 const races = [
     {
@@ -30,9 +31,9 @@ const races = [
     },
 ]
 
-const RacesSection = () => {
+const RacesSection = ({}, ref) => {
     return (
-        <div className="w-[100vw] flex justify-center">
+        <div className="w-[100vw] flex justify-center" ref={ref}>
             <div  className="flex flex-col w-[80vw] justify-center items-center text-center gap-[10%]">
                 <p className="cont-font text-6xl mb-20">Races</p>
 
@@ -46,4 +47,4 @@ const RacesSection = () => {
     )
 }
 
-export default RacesSection
+export default forwardRef(RacesSection)

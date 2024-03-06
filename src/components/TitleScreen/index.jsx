@@ -3,7 +3,7 @@ import "./TitleStyle.css"
 import Navbar from "../Navbar";
 import {ChevronDoubleRightIcon} from "@heroicons/react/24/solid"
 
-const TitleScreen = ({titleScreenOn, handleTitleScreen}) => {
+const TitleScreen = ({titleScreenOn, handleTitleScreen, moveToLore, moveToRaces, moveToElements, moveToFey}) => {
     return (
         <div className ={`w-full flex flex-col justify-center items-center left-0`}>
             <div className="absolute object-cover bg-img bg-cover bg-center w-full h-[100vh] -z-10 overflow-hidden border-none top-0" />
@@ -12,7 +12,7 @@ const TitleScreen = ({titleScreenOn, handleTitleScreen}) => {
             </div>
 
             <div>
-                <Navbar titleScreenOn={titleScreenOn} />
+                <Navbar titleScreenOn={titleScreenOn} moveToLore = {moveToLore} moveToRaces = {moveToRaces} moveToElements = {moveToElements} moveToFey = {moveToFey} />
             </div>
 
             <div className="fixed flex bottom-3 right-5 cursor-pointer" onClick={()=>handleTitleScreen()} >

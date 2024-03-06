@@ -1,7 +1,8 @@
+import { forwardRef } from "react"
 import feystoneImg from "../../assets/Images/feystone.webp"
-const FeySection = () => {
+const FeySection = ({}, ref) => {
     return (
-        <div className="h-[100vh] flex flex-col">
+        <div className="h-[100vh] flex flex-col" ref={ref}>
             <p className="text-center text-6xl cont-font py-10">Fey</p>
             <div className="flex justify-center gap-10">
                 <div className="w-[20%]">
@@ -16,4 +17,4 @@ const FeySection = () => {
     )
 }
 
-export default FeySection
+export default forwardRef(FeySection)
