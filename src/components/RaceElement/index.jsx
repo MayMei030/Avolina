@@ -16,7 +16,7 @@ const RaceElement = ({rIndex, name, description, image}) => {
 
 
     return (
-        <div ref={ref} className={`flex gap-[10%] mb-20 ${rIndex % 2 === 0 ? "": "flex-row-reverse"}`}>
+        <div ref={ref} className={`media-races flex gap-[10%] mb-20 ${rIndex % 2 === 0 ? "": "flex-row-reverse"}`}>
             <motion.div 
             variants={{
                 hidden: {opacity:0, x:rIndex % 2 === 0 ? 100 : -100},
@@ -25,9 +25,9 @@ const RaceElement = ({rIndex, name, description, image}) => {
             initial="hidden"
             animate={mainControls}
             transition={{duration:0.5, delay:0.7}}
-            className="flex flex-col justify-around">
+            className="flex flex-col justify-around my-2">
                 <p className="cont-font text-4xl">{name}</p>
-                <p className="lore-text">{description}</p>
+                <p className="lore-text text-justify">{description}</p>
             </motion.div>
             <motion.div 
             variants={{
@@ -36,7 +36,8 @@ const RaceElement = ({rIndex, name, description, image}) => {
             }}
             initial="hidden"
             animate={mainControls}
-            transition={{duration:0.5, delay:0.7}} >
+            transition={{duration:0.5, delay:0.7}}
+            className="flex justify-center items-center" >
                 <img src={image} alt=""  className="h-[50vh] max-w-none"/>
             </motion.div>
         </div>

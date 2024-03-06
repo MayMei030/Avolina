@@ -12,7 +12,7 @@ const TitleScreen = ({titleScreenOn, handleTitleScreen, moveToLore, moveToRaces,
             </div>
 
             <div>
-                <Navbar titleScreenOn={titleScreenOn} moveToLore = {moveToLore} moveToRaces = {moveToRaces} moveToElements = {moveToElements} moveToFey = {moveToFey} />
+                <Navbar titleScreenOn={titleScreenOn} moveToLore={moveToLore} moveToRaces={moveToRaces} moveToElements={moveToElements} moveToFey={moveToFey} />
             </div>
 
             <div className="fixed flex bottom-3 right-5 cursor-pointer" onClick={()=>handleTitleScreen()} >

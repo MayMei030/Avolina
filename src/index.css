@@ -43,4 +43,18 @@ body{
     .media-nav{
         gap: 0.5rem;
     }
+    .media-races{
+        flex-direction: column-reverse;
+    }
+}
+
+@media (min-width: 700px) {
+    .media-nav{
+        gap: 2.5rem;
+    }
+}
+@media (max-width: 900px) {
+    .media-fey{
+        flex-direction: column;
+    }
 }

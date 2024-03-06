@@ -46,22 +46,80 @@
     transition: all 1s ease;
 }
 
+@media (min-width: 700px) {
+    @keyframes title-off-an {
+        from{
+            font-size: 300px;
+            top: 50%;
+            text-wrap: nowrap;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        to{
+            font-size: 40px;
+            top: 1%;
+            left: 1.5%;
+        }
+    }
+    
+    @keyframes title-on-an {
+        from{
+            font-size: 40px;
+            top: 1%;
+            left: 1.5%;
+        }
+        to{
+            font-size: 300px;
+            top: 50%;
+            text-wrap: nowrap;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+    }
+}
+@media (max-width: 700px) {
+    @keyframes title-off-an {
+        from{
+            font-size: 180px;
+            top: 50%;
+            text-wrap: nowrap;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        to{
+            font-size: 40px;
+            top: 1%;
+            left: 1.5%;
+        }
+    }
+    
+    @keyframes title-on-an {
+        from{
+            font-size: 40px;
+            top: 1%;
+            left: 1.5%;
+        }
+        to{
+            font-size: 180px;
+            top: 50%;
+            text-wrap: nowrap;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+    }
+}
 
 .title-on{
     animation: title-on-an 1s ease-in-out forwards;
 }
 
 .title-off{
-    /* font-size: 50px;
-    top: 1%;
-    left: 1.5%; */
     animation: title-off-an 1s ease-in-out forwards;
-
 }
 
-@keyframes title-off-an {
+/* @keyframes title-off-an {
     from{
-        font-size: 300px;
+        font-size: 180px;
         top: 50%;
         text-wrap: nowrap;
         left: 50%;
@@ -81,13 +139,13 @@
         left: 1.5%;
     }
     to{
-        font-size: 300px;
+        font-size: 180px;
         top: 50%;
         text-wrap: nowrap;
         left: 50%;
         transform: translate(-50%,-50%);
     }
-}
+} */
 
 .hide{
     animation: hidean 0s ease-in-out 1s backwards;

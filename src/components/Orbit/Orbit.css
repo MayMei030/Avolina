@@ -68,7 +68,7 @@ body{
 .element-items{
     position:absolute;
     /* background-color: #a0a0a0; */
-    width: 8rem;
+    /* width: 8rem; */
     aspect-ratio: 1/1;
     border-radius: 50%;
     text-align: center;
@@ -81,6 +81,17 @@ body{
     justify-content: center;
     align-items: center;
     transform: translate(-50%, -50%);
+}
+
+@media (min-width: 700px) {
+    .element-items{
+        width: 8rem;
+    }
+}
+@media (max-width: 700px) {
+    .element-items{
+        width: 6rem;
+    }
 }
 
 @keyframes orbit{
@@ -113,6 +124,21 @@ body{
     display: block;
     margin: auto;
 }
+
+@media (min-width: 700px) {
+    .element-image{
+        height: 6rem;
+        width: 6rem;
+    }
+}
+@media (max-width: 700px) {
+    .element-image{
+        height: 4rem;
+        width: 4rem;
+    }
+}
+
+
 
 
 .element-items .element-name:hover{
@@ -197,6 +223,7 @@ body{
 
 .element-sec{
     display: flex;
+    /* flex-direction: column; */
     height: 100%;
     width: 100%;
     align-items: center;
@@ -232,23 +259,59 @@ body{
     border-radius: 10px;
 }
 
-@keyframes expand-desc{
-    from{
-        width: 0;
+
+
+@media (min-width: 1200px) {
+    @keyframes expand-desc{
+        from{
+            width: 0;
+        }
+        to{
+            width: 500px;
+        }
     }
-    to{
-        width: 500px;
+    
+    @keyframes unexpand-desc{
+        from{
+            width: 500px;
+    
+        }
+        to{
+            width: 0;
+        }
+    }
+}
+@media (max-width: 1200px) {
+    @keyframes expand-desc{
+        from{
+            width: 0;
+            height: 0;
+        }
+        to{
+            width: 400px;
+            height: 500px;
+        }
+    }
+    
+    @keyframes unexpand-desc{
+        from{
+            width: 400px;
+            height: 500px;
+    
+        }
+        to{
+            width: 0;
+            height: 0;
+        }
     }
 }
 
-@keyframes unexpand-desc{
-    from{
-        width: 500px;
-    }
-    to{
-        width: 0;
+@media (max-width: 1200px) {
+    .element-sec{
+        flex-direction: column;
     }
 }
+
 
 .description-div{
     width: 100%;

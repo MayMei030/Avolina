@@ -33,8 +33,8 @@ const races = [
 
 const RacesSection = ({}, ref) => {
     return (
-        <div className="w-[100vw] flex justify-center" ref={ref}>
-            <div  className="flex flex-col w-[80vw] justify-center items-center text-center gap-[10%]">
+        <div className="w-[100%] flex justify-center" ref={ref}>
+            <div  className="flex flex-col w-[90vw] justify-center items-center text-center gap-[10%]">
                 <p className="cont-font text-6xl mb-20">Races</p>
 
                 {
