@@ -1,0 +1,285 @@
+body{
+    display: flex;
+    width: 100vw;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    font-family: system-ui;
+    background-color: #000;
+    overflow-x: hidden; 
+} 
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #414141; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 20px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+  
+.center{
+    background-color: #303030;
+    color: white;
+    border-radius: 50%;
+    font-size: 30px;
+    width: 12rem;
+    height: 12rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.orbitUL{
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    transform-origin: center;
+    animation: orbit 40s linear infinite;
+    z-index: 2;
+}
+
+.orbitUL:hover{
+    animation-play-state: paused;
+}
+
+.orbitUL:hover *{
+    animation-play-state: paused;
+}
+
+.element-items{
+    position:absolute;
+    /* background-color: #a0a0a0; */
+    width: 8rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 1;
+    overflow: hidden;
+    top:50%;
+    left:50%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes orbit{
+    100%{
+        rotate: 1turn;
+    }
+}
+@keyframes orbit-negative{
+    100%{
+        rotate: -1turn;
+    }
+}
+
+.element-items .element-name{
+    margin: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    /* background-color: #505050; */
+    display: grid;
+    place-items: center;
+    font-family: "Beau Rivage";
+    font-size: 2rem;
+    transition: opacity 300ms;
+}
+
+.element-image{
+    height: 6rem;
+    width: 6rem;
+    display: block;
+    margin: auto;
+}
+
+
+.element-items .element-name:hover{
+    opacity: 1;
+}
+
+.element-items *{
+    position: absolute;
+    transform-origin: center;
+    animation: orbit-negative 40s linear infinite;
+}
+
+.element-items:nth-child(1){
+    opacity: 1;
+    transform: translate(-240%, -50%);
+    
+}
+.element-items:nth-child(2){
+    opacity: 1;
+    transform: translate(-125%, -225%);
+}
+.element-items:nth-child(3){
+    opacity: 1;
+    transform: translate(25%, -225%);
+}
+.element-items:nth-child(4){
+    opacity: 1;
+    transform: translate(140%, -50%);
+}
+.element-items:nth-child(5){
+    opacity: 1;
+    transform: translate(25%, 125%);
+}
+.element-items:nth-child(6){
+    opacity: 1;
+    transform: translate(-125%, 125%);
+}
+
+.mask{
+    position: relative;
+    display: flex;
+    height: 650px;
+    width: 650px;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+    clip-path: circle(50% at 50% 50%);
+    animation: expand 2s cubic-bezier(0.63, 0.01, 0.41, 0.98);
+}
+
+@keyframes expand{
+    from {
+        clip-path: circle(0% at 50% 50%);
+      }
+      to {
+        clip-path: circle(50% at 50% 50%);
+      }
+}
+
+.element-desc{
+    position: absolute;
+    color: white;
+    opacity: 0;
+}
+
+.show-desc{
+    opacity: 1 !important;
+    animation: arrive 1s ease;
+} 
+
+@keyframes arrive{
+    from{
+        transform: translateY(-50px);
+    }
+
+    to{
+        transform: translateY(0);
+    }
+}
+
+.element-sec{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.mark{
+    height: 600px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.closed{
+    width: 0;
+    overflow: hidden;
+}
+
+.collapsed-desc-mark{
+    /* height: 600px; */
+    /* overflow: hidden; */
+
+    animation: unexpand-desc 1s ease forwards;
+    /* white-space: nowrap; */
+}
+
+.expanded-desc-mark{
+    /* height: 600px; */
+    border: 3px solid white;
+
+    /* overflow: hidden; */
+    animation: expand-desc 1s ease forwards;
+    /* white-space: nowrap; */
+    border-radius: 10px;
+}
+
+@keyframes expand-desc{
+    from{
+        width: 0;
+    }
+    to{
+        width: 500px;
+    }
+}
+
+@keyframes unexpand-desc{
+    from{
+        width: 500px;
+    }
+    to{
+        width: 0;
+    }
+}
+
+.description-div{
+    width: 100%;
+    height: 100%;
+    color: white;
+}
+
+.desc-header{
+    margin: 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.element-description{
+    margin: 0 28px 0 28px;
+
+}
+
+.el-icon{
+    width: 80px;
+    height: 80px;
+}
+
+.element-title{
+    font-size: 32px;
+    margin: 0;
+}
+
+.close-icon{
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
