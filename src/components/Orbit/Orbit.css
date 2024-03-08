@@ -151,7 +151,7 @@ body{
         min-height: 100vh;
     }
     .element-items{
-        width: 10vw;
+        width: 9vw;
     }
     .center{
         width: 15vw;
@@ -324,9 +324,9 @@ body{
     margin: 0;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
-    clip-path: circle(50% at 50% 50%);
-    animation: expand 2s cubic-bezier(0.63, 0.01, 0.41, 0.98);
+    /* overflow: hidden; */
+    /* clip-path: circle(50% at 50% 50%);
+    animation: expand 2s cubic-bezier(0.63, 0.01, 0.41, 0.98); */
 }
 
 @keyframes expand{
