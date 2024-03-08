@@ -16,7 +16,7 @@ const RaceElement = ({rIndex, name, description, image}) => {
 
 
     return (
-        <div ref={ref} className={`media-races flex gap-[10%] mb-20 ${rIndex % 2 === 0 ? "": "flex-row-reverse"}`}>
+        <div ref={ref} className={`media-races overflow-hidden flex gap-[10%] mb-20 ${rIndex % 2 === 0 ? "": "flex-row-reverse"}`}>
             <motion.div 
             variants={{
                 hidden: {opacity:0, x:rIndex % 2 === 0 ? 100 : -100},

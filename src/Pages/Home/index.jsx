@@ -32,7 +32,7 @@ const Home = () => {
   return (
         <>
             <TitleScreen titleScreenOn={titleScreenOn} moveToLore={scrollToLore} moveToRaces={scrollToRaces} moveToElements={scrollToElements} moveToFey={scrollToFey} handleTitleScreen ={() => setTitleScreenOn(!titleScreenOn)} />
-            <div className="flex w-full h-[100vh] items-center justify-center text-7xl text-center cont-font hide">
+            <div className="flex w-[100%] h-[100vh] items-center justify-center text-7xl text-center cont-font hide">
                 <p className={`${titleScreenOn ? "hide-nav":"show-nav"}`}>"Welcome to Avolina, <br /> The Frozen Sphere"</p>
             </div>
 
