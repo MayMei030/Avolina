@@ -1,10 +1,10 @@
 import React from "react";
-import FireIcon from "../../assets/Fire.png"
-import HolyIcon from "../../assets/Holy.png"
-import IceIcon from "../../assets/Ice.png"
-import KineticIcon from "../../assets/Kinetic.png"
-import NatureIcon from "../../assets/Nature.png"
-import UnholyIcon from "../../assets/Unholy.png" 
+import FireIcon from "../../assets/FireIcon.webp"
+import HolyIcon from "../../assets/HolyIcon.webp"
+import IceIcon from "../../assets/IceIcon.webp"
+import KineticIcon from "../../assets/KineticIcon.webp"
+import NatureIcon from "../../assets/NatureIcon.webp"
+import UnholyIcon from "../../assets/UnholyIcon.webp" 
 
 import { XMarkIcon } from "@heroicons/react/24/solid";
 import "./Orbit.css"
