@@ -25,8 +25,8 @@ const RaceElement = ({rIndex, name, description, image}) => {
             initial="hidden"
             animate={mainControls}
             transition={{duration:0.5, delay:0.7}}
-            className="flex flex-col justify-around my-2">
-                <p className="cont-font text-4xl">{name}</p>
+            className="flex flex-col justify-center my-2">
+                <p className="cont-font text-4xl mb-8">{name}</p>
                 <p className="lore-text text-justify">{description}</p>
             </motion.div>
             <motion.div 

@@ -353,7 +353,7 @@ body{
 .mark{
     height: 600px;
     overflow: hidden;
-    white-space: nowrap;
+    /* white-space: nowrap; */
 }
 
 .closed{
@@ -449,7 +449,9 @@ body{
 
 .element-description{
     margin: 0 28px 0 28px;
-
+    overflow: auto;
+    text-overflow: ellipsis;
+    text-align: justify;
 }
 
 .el-icon{

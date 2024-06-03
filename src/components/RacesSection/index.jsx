@@ -36,6 +36,19 @@ const races = [
         description:"The Warforged are Gnomes who have used Heort Stone to give all their life force into a Soul Stone. The Soul Stone inside the Warforged gives life to the automaton. However, those gnomes who have done this lose their memory of their life before. Now roaming through life trying to find a purpose, they go off in search of answers. Who are they? Why are they here? There are very few Warforged as the Gnomes discourage anyone who thinks of the idea. They warn them of death and your soul being trapped forever. ",
         image: placeHolder,
     },
+    {
+        raceIndex: 6,
+        name: "Sea Elves",
+        description: "Sea Elves, also known as Incubus are a strange people. They are able to change their sex at will and use this to their advantage when making offspring. They can't make offspring with each other. Instead, they kidnap the gnomes on the shore and lead them down into the depths of the sea where they keep them in a cavern. They mate with the men as females so they can use their seed as the catalyst for the incubation process and then when they have changed the seeds from the male gnomes into Sea Elf eggs they mate with the Gnome females to impregnate and bear their children.",
+        image: placeHolder,
+    },
+    {
+        raceIndex: 7,
+        name: "Snow Elves",
+        description: "At heart, a peaceful people. They are infatuated by the other non-elf races. That's not what's most interiguing about them however. It is said that when one sees a Snow Elf, they are graced with finding ones true love. No one is sure how this legend was started, but it is said to be older than Fey. If this is true, that would make Snow Elves the eldest race known to Avolina. It also causes some debate on whether or not we were indeed created by Fey as is put foward by the elders. One thing is for certain though, if you are blessed by the sight of a Snow Elf, it is best to remain at a distance. If you find yourself getting too close, you will never be seen again.",
+        image: placeHolder,
+    },
+    
 ]
 
 const RacesSection = ({}, ref) => {
