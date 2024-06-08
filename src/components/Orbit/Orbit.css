@@ -31,7 +31,7 @@ body{
   }
   
 .center{
-    background-color: #303030;
+    /* background-color: #303030; */
     color: white;
     border-radius: 50%;
     font-size: 30px;
@@ -45,6 +45,41 @@ body{
     top:50%;
     left:50%;
     transform: translate(-50%, -50%);
+}
+
+.center-thing{
+    transition: filter 0.2s ease-in-out;
+    background-size: cover;
+    /* animation: eyeappear 0.3s ease-in-out; */
+    filter: opacity(0.1);
+
+}
+
+
+.opened-eye{
+    background-image: url("/src/assets/icons/openedEye.png");
+    /* filter: blur(10px) opacity(0.3); */
+    /* filter: opacity(1); */
+    background-size: cover;
+    animation: eyeappear 0.3s ease-in-out forwards;
+
+}
+
+.closed-eye{
+    background-image: url("/src/assets/icons/closedEye.png");
+    /* filter: blur(10px) opacity(0.3); */
+    /* filter: opacity(0.3); */
+    background-size: cover;
+    animation: eyeappear 0.3s ease-in-out forwards;
+}
+
+@keyframes eyeappear{
+    0%{
+        filter: opacity(0.3) blur(10px);
+    }
+    100%{
+        filter: opacity(1) blur(0);
+    }
 }
 
 

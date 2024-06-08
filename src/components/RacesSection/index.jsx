@@ -48,6 +48,12 @@ const races = [
         description: "At heart, a peaceful people. They are infatuated by the other non-elf races. That's not what's most interiguing about them however. It is said that when one sees a Snow Elf, they are graced with finding ones true love. No one is sure how this legend was started, but it is said to be older than Fey. If this is true, that would make Snow Elves the eldest race known to Avolina. It also causes some debate on whether or not we were indeed created by Fey as is put foward by the elders. One thing is for certain though, if you are blessed by the sight of a Snow Elf, it is best to remain at a distance. If you find yourself getting too close, you will never be seen again.",
         image: placeHolder,
     },
+    {
+        raceIndex: 8,
+        name: "Human race",
+        description: "Mostly a kind people. Able to get along and befriend any others easily with their charm. This is a blessing and a curse. While most are kind, some have done unspeakable evils to the world and it's other inhabitants.",
+        image: placeHolder,
+    },
     
 ]
 

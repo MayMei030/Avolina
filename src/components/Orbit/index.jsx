@@ -6,6 +6,9 @@ import KineticIcon from "../../assets/KineticIcon.webp"
 import NatureIcon from "../../assets/NatureIcon.webp"
 import UnholyIcon from "../../assets/UnholyIcon.webp" 
 
+import openedEye from "../../assets/icons/openedEye.png"
+import closedEye from "../../assets/icons/closedEye.png"
+
 import { XMarkIcon } from "@heroicons/react/24/solid";
 import "./Orbit.css"
 
@@ -24,9 +27,19 @@ const necromancyDes = "Necromancy is the opposite of Conjuration. Instead of cre
     return(
         <div className="element-sec">
         <div className="mask">
-            <div className="center">
-                <p>Elements</p>
-            </div>
+            {
+                descMarkAct && ( <div className="center opened-eye"></div> )
+            }
+            {
+                !descMarkAct && ( <div className="center closed-eye"></div> )
+            }
+
+            {/* <div className={`center ${descMarkAct ? "opened-eye":"closed-eye"}`}> */}
+                {/* <p>Elements</p> */}
+                {/* <div className={`center-thing ${activated? "opened-eye":"closed-eye"}`}>
+                </div> */}
+                {/* <img className="center-thing" src={descMarkAct ? openedEye : closedEye} alt="" /> */}
+            {/* </div> */}
             <ul className="orbitUL">
                 <li className="element-items bg-[#ea7838]">
                     <img className="element-image" src={FireIcon} alt=""/>
