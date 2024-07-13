@@ -157,7 +157,7 @@ body{
 
 @media (min-width: 1575px) {
     .element-image{
-        height: 90%;
+        height: 97%;
     }
     .mask{
         width: 50vw;
@@ -176,7 +176,7 @@ body{
 }
 @media (max-width: 1575px) {
     .element-image{
-        height: 90%;
+        height: 97%;
     }
     .mask{
         width: 50vw;
@@ -195,7 +195,7 @@ body{
 
 @media (max-width: 900px) {
     .element-image{
-        height: 90%;
+        height: 97%;
     }
     .mask{
         width: 100vw;
@@ -234,7 +234,7 @@ body{
 
 @media (max-width: 484px) {
     .element-image{
-        height: 90%;
+        height: 97%;
 
     }
     .mask{
